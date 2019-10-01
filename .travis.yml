@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: Z/6b1pzohOYDhnidyrk3HakoC29VBS0JO+oU70HFmmITcxAAbIApG9oA++q9FZNLn6TYqQ19M79fAUWYkM7V2BvzrNz+IhpDmlWx7jLoFgNs24dNa/M3eUkUs2KNg89gHbJb5nQBfO3FBv98LgEajQpjg7RCy7EA1oAMSyga4chegQdJRvMZuki8kKR+a6cZe97BTdrZqoQbUFndZpMmL8iTErexfAyBpGKwfv3YA7thQbe/iiiec+A75tLLiusql592Pwfbk/Mi/jjRjnzafxkUIgn5Zj34ckqPOhCH6hdU0XNHEDA0309WeIFDVxYi68dqv05Ri4/Td8CPMd176RfhAgx2ZimAC+NxKHgfdXx/d/HmwsnTazC5lAKeyWq8j+e/vUuBwaNMZcPKXA1SXB7TzhpI4j+NvdrQhKesYNOmJVSTAOBKc8kNgsA509t53H5Tnu2t8+QMvz9lP6Jo4cvoqkfwQ97O5d0s1EFEg5LsuWoTDnXRDLo3zYBP0NDAZoV0qQ+9IhAYAgDULdkHkanYanu6qBosNjNiwOS62Liq7KT3l8CMXG391g09sJbealJhLMJVeU1SNgHLKGMmb01Eu5OyaMWvX2CFpu0ZQEYBXC+tbTaijbR/71fDkqXNUuRylPN8vzwFsxxjDYlAsBMHhtRvN+Z7+LmFxVoR20c=
+  app: thinkful-hot-cold-game
+  on:
+    repo: mulan114/ThinkfulHotColdDrill
